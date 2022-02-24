@@ -1,0 +1,10 @@
+-lib buddy:2.13.0
+-lib hxnodejs:12.1.0
+--library travix:0.15.0
+
+-cp source
+-cp tests
+
+--main RunTests
+
+--js build\node\main.js

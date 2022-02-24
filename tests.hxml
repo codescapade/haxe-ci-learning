@@ -2,3 +2,4 @@
 -cp tests
 -main RunTests
 --library buddy:2.13.0
+--library travix:0.15.0

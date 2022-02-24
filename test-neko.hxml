@@ -1,5 +1,6 @@
 -cp source
 -cp tests
 --library buddy:2.13.0
+--library travix:0.15.0
 
 -x RunTests
