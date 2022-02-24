@@ -1,5 +1,6 @@
 package;
 
+import travix.Logger;
 import buddy.SuitesRunner;
 import RectangelTest.RectangleTest;
 import buddy.reporting.ConsoleColorReporter;
@@ -15,6 +16,8 @@ class RunTests {
     final runner = new SuitesRunner(tests);
     runner.run();
 
-    Sys.exit(runner.statusCode());
+    Logger.exit(runner.statusCode());
+    // Sys.exit(1);
+    // Sys.exit(runner.statusCode());
   }
 }
