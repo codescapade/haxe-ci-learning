@@ -14,5 +14,7 @@ class RunTests {
 
     final runner = new SuitesRunner(tests);
     runner.run();
+
+    Sys.exit(runner.statusCode());
   }
 }
