@@ -15,8 +15,10 @@ class RunTests {
 
     final runner = new SuitesRunner(tests);
     runner.run();
-
+    trace('test');
+    #if neko
     Logger.exit(runner.statusCode());
+    #end
     // Sys.exit(1);
     // Sys.exit(runner.statusCode());
   }
