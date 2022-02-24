@@ -81,7 +81,7 @@ jobs:
     ##################################################
     # Tests
     ##################################################
-    - name: Test [neko ]
-      run: haxelib run travix neko
     - name: Test [node ]
       run: haxelib run travix node
+    - name: Test [neko ]
+      run: haxelib run travix neko
