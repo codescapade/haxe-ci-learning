@@ -1,0 +1,12 @@
+{
+  "name": "haxe-ci-learning",
+  "license": "MIT",
+  "tags": [],
+  "classPath": "source",
+  "contributors": [
+    "Codescapade"
+  ],
+  "releasenote": "initial release",
+  "version": "0.0.0",
+  "dependencies": {}
+}
