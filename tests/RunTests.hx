@@ -1,5 +1,6 @@
 package;
 
+import js.node.Process;
 import travix.Logger;
 import buddy.SuitesRunner;
 import RectangelTest.RectangleTest;
@@ -14,11 +15,18 @@ class RunTests {
     ];
 
     final runner = new SuitesRunner(tests);
-    runner.run();
-    trace('test');
-    #if neko
-    Logger.exit(runner.statusCode());
-    #end
+    runner.run().then((f: SuitesRunner) -> {
+      Logger.exit(f.statusCode());
+    });
+    
+    // Logger.println('testing');
+    // #if neko
+    // trace(runner.statusCode());
+
+    
+    // Logger.exit(0);
+    // Logger.exit(runner.statusCode());
+    // #end
     // Sys.exit(1);
     // Sys.exit(runner.statusCode());
   }

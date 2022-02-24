@@ -19,7 +19,7 @@ class RectangleTest extends BuddySuite {
 
       it('should calculate the area of a rectangle', () -> {
         var rect = new Rectangle(0, 0, 5, 8);
-        rect.area().should.be(4);
+        rect.area().should.be(40);
       });
     });
   }
