@@ -2,4 +2,3 @@
 -cp tests
 -main RunTests
 --library buddy:2.13.0
--dce full

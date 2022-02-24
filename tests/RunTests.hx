@@ -7,12 +7,12 @@ import buddy.reporting.ConsoleColorReporter;
 class RunTests {
 
   static function main() {
-    final reporter = new ConsoleColorReporter();
+    // final reporter = new ConsoleColorReporter();
     final tests = [
       new RectangleTest()
     ];
 
-    final runner = new SuitesRunner(tests, reporter);
+    final runner = new SuitesRunner(tests);
     runner.run();
   }
 }
